@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+    vertical-align: baseline;
+}
+
+.navbar{
+
+    background-color: aquamarine;
+}
+
+@media only screen and (max-width: 600px){
+   
+}
