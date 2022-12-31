@@ -42,14 +42,14 @@
 
 
 h2{
-    font-weight: 600;
     color: white;
 }
 
 .imagen{
     width: 30px;
     height: auto;
-    
+    padding: 30px;
+    border-radius: 40%;
 }
 
 .card{
@@ -80,4 +80,28 @@ ul{
 
 .contacto-lista{
     padding: 0%;
+}
+
+.skills{
+    margin-top: 50px;
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+.skill{
+    color: white;
+}
+
+.imagen-skill{
+    margin-top: 10px;
+    width: 150px;
+    height: auto;
+    object-fit: contain;
+}
+
+.p-skill{
+    color: white;
+    padding: 10px;
+    margin-top: 5px;
 }
