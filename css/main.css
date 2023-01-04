@@ -7,23 +7,26 @@
 }
 
 
+
 .navbar a{
     text-align: center;
     color: rgb(255, 255, 255);
     margin-right: 10px;
     padding: 2px;
     
+    
 }
 
 .navbar a:hover{
-    color: gold;
+    color: grey;
 }
 
 .navbar{
     background-color: #000011;
+    transition: .3s ease all;
 }
 
-.navbar button{
+.navbar-btn{
     box-shadow: 0px 0px 2px 1px white;
 }
 
@@ -31,6 +34,56 @@
     background-color: #000011;
     padding: 40px;
     height: 800px;
+    transition: .3s ease all;
+}
+
+body.dark .section{
+    background-color: whitesmoke;
+}
+
+body.dark .navbar{
+    background-color: whitesmoke;
+}
+
+body.dark .navbar a{
+    color: #000011;
+}
+
+body.dark h2{
+    color: #000011;
+}
+
+body.dark .skill{
+    color: white;
+}
+
+body.dark .p-skill{
+    color: black;
+}
+
+body.dark .card{
+    box-shadow: 0px 0px 10px 5px gainsboro;
+}
+
+body.dark .navbar a:hover{
+    color: gray;
+}
+
+body.dark .btn i{
+    transition: .3s ease all;
+    color: black;
+}
+
+nav .navbar-btn{
+    color: white;
+}
+
+body.dark nav .navbar-btn{
+    color: black;
+}
+
+.btn i{
+    color: white;
 }
 
 .section-about{
@@ -55,6 +108,7 @@ h2{
 .card{
     padding: 20px;
     margin-bottom: 20px;
+    box-shadow: 0px 0px 10px 5px rgb(59, 59, 59);
 }
 
 .title{
@@ -105,4 +159,39 @@ ul{
     color: white;
     padding: 10px;
     margin-top: 5px;
+}
+
+.section-exp{
+    margin-top: 50px;
+    padding: 10px;
+    display: flex;
+}
+
+.card-exp{
+    margin: 30px;
+}
+
+#experience{
+    height: 1000px;
+}
+
+
+@media only screen and (max-width:596px){
+    .section-skills{
+        height:1000px;
+    }
+    .section-exp{
+        width: 400px;
+        display: block;
+    }
+    #experience{
+        height: 1200px;
+    }
+}
+
+@media only screen and (max-width:422px){
+    .section-skills{
+        height:1500px;
+    }
+  
 }

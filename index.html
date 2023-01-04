@@ -5,8 +5,8 @@
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
 
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/main.css'>
+    <script src='js/main.js'></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Orelega+One&family=Roboto:wght@500&display=swap" rel="stylesheet">
@@ -22,10 +22,10 @@
 
     <!--NAVBAR-->
 
-    <nav class="navbar navbar-dark navbar-expand-lg">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler navbar-btn" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fa-solid fa-bars"></i></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
@@ -38,11 +38,18 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#experience">EXPERIENCIAS</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">CONTACTO</a>
+                    </li>
+                    <li class="nav-item mx-auto">
+                        <button class="btn" id="mode-btn"><i class="fa-solid fa-circle-half-stroke"></i></button>
+                    </li>
             </div>
+            
         </div>
     </nav>
 
-    <!--END NAVBAR-->
+    <!--FIN NAVBAR-->
 
 
     <!--CARD "SOBRE MI"-->
@@ -65,10 +72,13 @@
             </div>
        </section>
 
+        <!--FIN CARD "SOBRE MI"-->
+
+
        <!--HABILIDADES-->
 
-       <section class="container-fluid section" id="skills">
-            <div class="section-skills col-md text-center">
+       <section class="container-fluid section-skills section" id="skills">
+            <div class="col-md text-center">
                 <h2 class="text-center">HABILIDADES</h2>
                 <div class="skills">
                     <div class="row align-items-center">
@@ -76,26 +86,26 @@
                             <img class="imagen-skill" src="img/html.png" alt="Imagen HTML"/>
                             <p class="p-skill">HTML</p>
                         </div>
-                        <div class="col">
+                        <div class="col ms-auto">
                             <img class="imagen-skill" src="img/css.svg" alt="Imagen CSS"/>
                             <p class="p-skill">CSS</p>
                         </div>
-                        <div class="col">
+                        <div class="col mas-auto">
                             <img class="imagen-skill" src="img/js.png" alt="Imagen JS"/>
                             <p class="p-skill">JavaScript</p>
                         </div>
 
                         <div class="w-100"></div>
 
-                        <div class="col">
+                        <div class="col ms-auto">
                             <img class="imagen-skill" src="img/php.png" alt="Imagen PHP"/>
                             <p class="p-skill">PHP</p>
                         </div>
-                        <div class="col">
+                        <div class="col ms-auto">
                             <img class="imagen-skill" src="img/boot.png" alt="Imagen bootstrap"/>
                             <p class="p-skill">Bootstrap</p>
                         </div>
-                        <div class="col">
+                        <div class="col ms-auto">
                             <img class="imagen-skill" src="img/sql.png" alt="Imagen MySQL"/>
                             <p class="p-skill">MySQL</p>
                         </div>
@@ -104,15 +114,34 @@
             </div>
        </section>
 
+        <!--FIN HABILIDADES-->
+
+
        <!--EXPERIENCIAS-->
 
        <section class="container-fluid section" id="experience">
         <div class="section-experience">
-            <h2 class="text-center">EXPERIENCIAS</h2>
-            <div>
-
+            <h2 class="text-center ms-auto">EXPERIENCIAS</h2>
+            <div class="section-exp mx-auto">
+                <div class="card card-exp">
+                    <img src="img/pradera.jpg" class="imagen-exp" alt="Ejemplo de imagen">
+                    <div class="card-body">
+                      <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus maiores aliquam ipsa quisquam nesciunt, reprehenderit quod doloremque eligendi magni laborum odio temporibus, eos ratione voluptatem rerum ex aut ullam et.</p>
+                      <a href="https://github.com/thiagobrnal/Entrega-N-1---CV-BERNAL-Thiago" class="card-link">Ver más</a>
+                    </div>
+                </div>
+                <div class="card card-exp">
+                    <img src="img/pradera.jpg" class="imagen-exp" alt="Ejemplo de imagen">
+                    <div class="card-body">
+                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam blanditiis quas, quidem magni corporis consequatur. Perspiciatis cumque odio excepturi molestias provident repudiandae commodi, dolores, assumenda mollitia harum, quo voluptatem accusantium.</p>
+                      <a href="https://github.com/thiagobrnal/Entrega-N-1---CV-BERNAL-Thiago" class="card-link">Ver más</a>
+                    </div>
+                </div>
             </div>
         </div>
    </section>
+
+       <!--FIN EXPERIENCIAS-->
+   
 </body>
 </html>
