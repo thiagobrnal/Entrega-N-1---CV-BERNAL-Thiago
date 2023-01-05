@@ -1,3 +1,5 @@
+
+//Boton de modo noctruno/claro
 document.addEventListener('DOMContentLoaded', () => {
     const btn = document.getElementById('mode-btn');
     console.log(btn);
@@ -8,8 +10,4 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log('btn clicked');
       });
 
-    /*document.getElementById('mode-btn').addEventListener('click', () => {
-        document.getElementById('mode').style.backgroundColor = 'white';
-        document.getElementsByClassName('.section').style.backgroundColor = 'white';
-    });*/
 });
